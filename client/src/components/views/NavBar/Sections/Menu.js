@@ -31,6 +31,9 @@ function RightMenu(props) {
                 <Menu.Item key="app">
                     <a href="/register">Signup</a>
                 </Menu.Item>
+                <Menu.Item>
+                    <DrawerMenu />
+                </Menu.Item>
             </Menu>
         )
     } else if (user.userData && user.userData.role === 0) { //관리자 화면
@@ -41,6 +44,9 @@ function RightMenu(props) {
                 </Menu.Item>
                 <Menu.Item key="logout">
                     <a onClick={logoutHandler}>Logout</a>
+                </Menu.Item>
+                <Menu.Item>
+                    <DrawerMenu />
                 </Menu.Item>
             </Menu>
         )
@@ -57,6 +63,9 @@ function RightMenu(props) {
                 </Menu.Item>
                 <Menu.Item key="logout">
                     <a onClick={logoutHandler}>Logout</a>
+                </Menu.Item>
+                <Menu.Item>
+                    <DrawerMenu />
                 </Menu.Item>
 
             </Menu >

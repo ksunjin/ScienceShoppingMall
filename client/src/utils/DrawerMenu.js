@@ -16,9 +16,8 @@ function DrawerMenu() {
 
     return (
         <div style={{ justifyContent: 'flex-end', display: 'flex' }}>
-            <Button onClick={showDrawer}>
+            <Button onClick={showDrawer} type='text'>
                 <MenuOutlined />
-            Menu
             </Button>
             <Drawer
                 title="Menu"
@@ -27,9 +26,13 @@ function DrawerMenu() {
                 onClose={onClose}
                 visible={visible}
             >
-                <p>Category1</p>
-                <p>Category2</p>
-                <p>Category3</p>
+                <p>Skeleton Models</p>
+                <p>Human Models</p>
+                <p>Animal Plant Model</p>
+                <p>SPECIMEN</p>
+                <p>Microscope Slides</p>
+                <p>Chemistry</p>
+                
             </Drawer>
         </div>
     )

@@ -3,7 +3,6 @@ import axios from 'axios';
 import { withRouter } from 'react-router-dom';
 import { Typography, Button, Card, Col, Row, Drawer } from 'antd';
 import { BulbOutlined, MenuOutlined } from '@ant-design/icons';
-import DrawerMenu from '../../../utils/DrawerMenu';
 import ImageSlider from '../../../utils/ImageSlider';
 import SearchFeature from './Sections/SearchFeature';
 
@@ -105,8 +104,6 @@ function LandingPage(props) {
             <div style={{ textAlign: 'center', margin: '3rem auto' }}>
                 <Title level={2}>전체 상품 <BulbOutlined /></Title>
             </div>
-
-            <DrawerMenu />
 
             <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
                 <SearchFeature

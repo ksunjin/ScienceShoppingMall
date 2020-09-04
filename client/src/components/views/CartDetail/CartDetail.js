@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { getCartItems, removeCartItems } from '../../../_actions/user_action';
 import UserCartCard from './Sections/UserCartCard';
-import DrawerMenu from '../../../utils/DrawerMenu';
 import { ShoppingCartOutlined } from '@ant-design/icons';
 import { Typography, Empty } from 'antd'
 
@@ -57,7 +56,6 @@ function CartDetail(props) {
     return (
         <div style={{ width: '85%', margin: '3rem auto' }}>
 
-            <DrawerMenu />
             <Title level={2} style={{ textAlign: 'center' }}>장바구니<ShoppingCartOutlined /></Title>
 
             <UserCartCard products={props.user.cartDetail} removeItem={removeFromCart} />

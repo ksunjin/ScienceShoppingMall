@@ -2,8 +2,6 @@ import React from 'react'
 import { Typography, Button } from 'antd';
 import "./UserCartCard.css"
 
-const { Title } = Typography;
-
 function UserCartCard(props) {
 
     const renderCartImage = (images) => {
